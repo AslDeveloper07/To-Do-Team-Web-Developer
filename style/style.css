@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #f5f7fa;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .todo-wrapper {
@@ -12,12 +12,11 @@ body {
   width: 420px;
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
-  transition: 0.2s ease;
+  transition: 0.3s ease;
+  border: 1px solid rgba(128, 128, 128, 0.192);
 }
-
 .todo-wrapper:hover {
-  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .todo-title {
@@ -28,13 +27,12 @@ body {
   text-align: center;
 }
 
-/* INPUT + BUTTON */
 .todo-form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 18px;
 }
-.input-group{
+.input-group {
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -53,6 +51,7 @@ body {
 .todo-input:focus {
   border-color: #007df1;
   box-shadow: 0px 0px 5px rgba(0, 125, 241, 0.3);
+  outline: none;
 }
 
 .add-btn {
@@ -75,13 +74,15 @@ body {
   gap: 6px;
   cursor: pointer;
 }
-.todo-stats{
+.todo-stats {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
 }
-button{cursor: pointer;}
+button {
+  cursor: pointer;
+}
 .filter-btn {
   padding: 6px 10px;
   border-radius: 6px;
@@ -100,14 +101,12 @@ button{cursor: pointer;}
   color: white;
 }
 
-/* LIST */
 .todo-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* ITEM */
 .todo-item {
   background: #f7f7f7;
   padding: 10px 14px;
@@ -122,7 +121,7 @@ button{cursor: pointer;}
 
 .todo-item:hover {
   background: #efefef;
-  transform:scale(1.03);
+  transform: scale(1.03);
 }
 
 .todo-item.completed {
@@ -138,7 +137,6 @@ button{cursor: pointer;}
   color: #888;
 }
 
-/* ACTION BUTTONS */
 .todo-actions {
   margin-left: 10px;
   display: flex;
@@ -162,12 +160,16 @@ button{cursor: pointer;}
   color: red;
   background: rgba(255, 0, 0, 0.116);
 }
-.delete-btn:hover{
-  
+.delete-btn:hover {
+  background: rgba(255, 0, 0, 0.219);
 }
 
 .edit-btn {
   color: #007df1;
+  background: rgba(0, 132, 255, 0.116);
+}
+.edit-btn:hover {
+  background: rgba(0, 132, 255, 0.274);
 }
 
 .todo-edit-input {
@@ -178,17 +180,19 @@ button{cursor: pointer;}
 }
 
 .clear-completed-btn {
-  background-color: #ff3b30;
-  color: white;
+  background-color: #eb0000;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 8px 10px;
   border-radius: 6px;
   font-size: 14px;
   transition: 0.2s ease;
+  border: 1px solid rgba(128, 128, 128, 0.158);
 }
 
 .clear-completed-btn:hover {
-  background-color: #e1322a;
+  background-color: #ec0000;
+  color: white;
 }
 
 #todoCount {

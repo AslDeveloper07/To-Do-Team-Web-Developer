@@ -1,7 +1,7 @@
 let todoForm, todoInput, todoList, filterButtons, clearCompletedBtn;
 
 let todos = [];
-let currentFilter = "all"; // 'all', 'active', 'completed'
+let currentFilter = "all";
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeApp();
@@ -478,7 +478,7 @@ function showNotification(message, type = "info") {
             }
 
             .notification-info {
-                background: #cad3ffff;
+                background: #006effff;
             }
         `;
     document.head.appendChild(style);
