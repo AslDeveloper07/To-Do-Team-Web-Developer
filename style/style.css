@@ -2,148 +2,28 @@
 
 }
 
-.todo-wrapper {
+body{
+  background-color: #f4f4f4;
+  padding-top: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 
 }
 
-.todo-title {
+nav
 
-}
-
-.todo-form {
-  margin-bottom: 20px;
-}
-
-.input-group {
-
-}
-
-.todo-input {
-
-}
-
-.todo-input:focus {
-
-}
-
-.add-btn {
-
-}
-
-.add-btn:hover {
-}
-
-.filter-buttons {
-
-}
-
-.filter-btn {
-
-}
-
-.filter-btn:hover {
-
-}
-
-.filter-btn.active {
-
-}
-
-.todo-stats {
-
-}
-
-.clear-completed-btn {
-
-}
-
-.clear-completed-btn:hover {
-}
-
-.todo-list {
-}
-
-.todo-item {
-
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.todo-item:hover {
-
-}
-
-.todo-item.completed {
-  opacity: 0.7;
-}
-
-.todo-checkbox {
-
-}
-
-.todo-text {
-
-}
-
-.todo-item.completed .todo-text {
-
-}
-
-.todo-edit-input {
-
-}
-
-.todo-actions {
-
-}
-
-.todo-btn {
-
-}
-
-.edit-btn {
-
-}
-
-.edit-btn:hover {
-
-}
-
-.delete-btn {
-
-}
-
-.delete-btn:hover {
-
-}
-
-.save-btn {
-
-}
-
-.save-btn:hover {
-}
-
-.cancel-btn {
-
-}
-
-.cancel-btn:hover {
-}
-
-.empty-state {
-
-}
-
-.empty-state i {
-
+.main_card{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
