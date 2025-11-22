@@ -1,4 +1,3 @@
-
 let todoForm, todoInput, todoList, filterButtons, clearCompletedBtn;
 
 let todos = [];
@@ -480,15 +479,15 @@ function showNotification(message, type = "info") {
             }
 
             .notification-success {
-                background: #51cf66;
+                background: #00e226ff;
             }
 
             .notification-error {
-                background: #ff6b6b;
+                background: #fa0000ff;
             }
 
             .notification-info {
-                background: #667eea;
+                background: #cad3ffff;
             }
         `;
     document.head.appendChild(style);
