@@ -1,6 +1,149 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.todo-container {
+
 }
 
+.todo-wrapper {
+
+}
+
+.todo-title {
+
+}
+
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.input-group {
+
+}
+
+.todo-input {
+
+}
+
+.todo-input:focus {
+
+}
+
+.add-btn {
+
+}
+
+.add-btn:hover {
+}
+
+.filter-buttons {
+
+}
+
+.filter-btn {
+
+}
+
+.filter-btn:hover {
+
+}
+
+.filter-btn.active {
+
+}
+
+.todo-stats {
+
+}
+
+.clear-completed-btn {
+
+}
+
+.clear-completed-btn:hover {
+}
+
+.todo-list {
+}
+
+.todo-item {
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.todo-item:hover {
+
+}
+
+.todo-item.completed {
+  opacity: 0.7;
+}
+
+.todo-checkbox {
+
+}
+
+.todo-text {
+
+}
+
+.todo-item.completed .todo-text {
+
+}
+
+.todo-edit-input {
+
+}
+
+.todo-actions {
+
+}
+
+.todo-btn {
+
+}
+
+.edit-btn {
+
+}
+
+.edit-btn:hover {
+
+}
+
+.delete-btn {
+
+}
+
+.delete-btn:hover {
+
+}
+
+.save-btn {
+
+}
+
+.save-btn:hover {
+}
+
+.cancel-btn {
+
+}
+
+.cancel-btn:hover {
+}
+
+.empty-state {
+
+}
+
+.empty-state i {
+
+}
