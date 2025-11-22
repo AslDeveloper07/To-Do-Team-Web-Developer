@@ -27,7 +27,6 @@ function createUI() {
   container.innerHTML = `
         <div class="todo-wrapper">
             <h1 class="todo-title">
-                <i class="ri-checkbox-circle-line"></i>
                 To-Do App
             </h1>
 
@@ -145,7 +144,6 @@ function handleFilterClick(e) {
   });
   filterBtn.classList.add("active");
 
-  // Update current filter
   currentFilter = filterBtn.dataset.filter;
 
   renderTodos();
@@ -207,16 +205,13 @@ function handleEditTodo(todoId) {
   editInput.focus();
   editInput.select();
 
-  // Update action buttons
   const actions = todoItem.querySelector(".todo-actions");
   actions.innerHTML = `
         <button class="todo-btn save-btn" data-action="save">
             <i class="ri-save-line"></i>
-            Saqlash
         </button>
         <button class="todo-btn cancel-btn" data-action="cancel">
             <i class="ri-close-line"></i>
-            Bekor qilish
         </button>
     `;
 
@@ -276,12 +271,10 @@ function restoreActionButtons(todoItem) {
   const actions = todoItem.querySelector(".todo-actions");
   actions.innerHTML = `
         <button class="todo-btn edit-btn" data-action="edit">
-            <i class="ri-edit-line"></i>
-            Tahrirlash
+           <i class="ri-pencil-line"></i>
         </button>
         <button class="todo-btn delete-btn" data-action="delete">
             <i class="ri-delete-bin-line"></i>
-            O'chirish
         </button>
     `;
 }
@@ -386,12 +379,10 @@ function createTodoElement(todo) {
         <span class="todo-text">${escapeHtml(todo.text)}</span>
         <div class="todo-actions">
             <button class="todo-btn edit-btn" data-action="edit">
-                <i class="ri-edit-line"></i>
-                Tahrirlash
+         <i class="ri-pencil-line"></i>
             </button>
             <button class="todo-btn delete-btn" data-action="delete">
                 <i class="ri-delete-bin-line"></i>
-                O'chirish
             </button>
         </div>
     `;
